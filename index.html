@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Story Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="main.js"></script>
+</head>
+<body>
+    <canvas id="canvas" width="1080" height="1920"></canvas>
+    <input type="file" id="imageUpload" accept="image/*">
+    <label>Blur (1px to 10px):</label>
+    <input type="range" id="blurSlider" min="1" max="10" value="1">
+
+    <div class="control">
+        <button id="processImage">Process Image</button>
+        <a id="download" download="processed_image.png">Download</a>
+    </div>
+</body>
+</html>
